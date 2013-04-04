@@ -1,0 +1,16 @@
+{
+	"locations" : [
+		{
+			"title" : "Castro",
+			"cue" : 1.5,
+			"lat" : 37.762613,
+			"lng" : -122.435192
+		},
+		{
+			"title" : "Embarcadero",
+			"cue" : 3.5,
+			"lat" : 37.795224,
+			"lng" : -122.393913
+		}
+	]
+}

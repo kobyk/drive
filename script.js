@@ -1,26 +1,15 @@
-$(document).ready(function(){
-	initPopcorn();
-	initGoogleMaps();
-});
-
 var map;
 var markers = [];
-var dataPoints = {
-	locations : [
-		{
-			cue : 1.5,
-			title : "Castro",
-			lat:37.762613,
-			lng:-122.435192
-		},
-		{
-			cue : 3.5,
-			title : "Embarcadero",
-			lat:37.795224,
-			lng:-122.393913
-		}
-	]
-};
+var dataPoints = {}
+
+
+$(document).ready(function(){
+	$.getJSON('data.json', function(data) {
+		dataPoints = data;
+		initPopcorn();
+		initGoogleMaps();
+	});
+});
 
 
 var initPopcorn = function() {
@@ -31,6 +20,7 @@ var initPopcorn = function() {
 		'#video',
 		'http://www.youtube.com/watch?v=i-vtDYgRgnU' );
 
+	// set all markers
 	var inc = 0;
 	for ( var i = 0; i < dataPoints.locations.length; i++) {
 		pop.cue( dataPoints.locations[i].cue, function() {
