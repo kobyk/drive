@@ -1,0 +1,127 @@
+
+<!-- 
+
+to do
+1)get long-lat of sf
+2)find long-lat of 1 location in sf
+
+-->
+<html>
+	<head>
+		<title>Google Maps and jQuery</title>
+		<!-- http://code.google.com/apis/ajaxlibs/documentation/ -->
+
+		<script type="text/javascript" src="http://www.google.com/jsapi?key=AIzaSyDNhJfzt33bXtOsx-zc6deSeiD7KAcSY9E"></script>
+		<script type="text/javascript">
+		google.load("jquery", '1.3');
+		google.load("maps", "2.x");
+		</script>
+		
+		<script type="text/javascript" charset="utf-8">
+			var dataPoints = {
+				locations : [
+					{
+						title : "Castro",
+						lat:37.762613,
+						lng:-122.435192
+					},
+					{
+						title : "Embarcadero",
+						lat:37.795224,
+						lng:-122.393913
+					}
+				]
+			};
+
+			$(document).ready(function(){
+		
+				var map = new GMap2($("#map").get(0));
+				var sanfran = new GLatLng(37.760401, -122.434731);
+				map.setCenter(sanfran, 12);
+				
+				// setup 10 random points
+				// var bounds = map.getBounds();
+				// var southWest = bounds.getSouthWest();
+				// var northEast = bounds.getNorthEast();
+				// var lngSpan = northEast.lng() - southWest.lng();
+				// var latSpan = northEast.lat() - southWest.lat();
+				var markers = [];
+				for (var i = 0; i < dataPoints.locations.length; i++) {
+					var loc = dataPoints.locations[i];
+				    var point = new GLatLng(loc.lat, loc.lng);
+					marker = new GMarker(point);
+					map.addOverlay(marker);
+					markers[i] = marker;
+				}
+				
+				$(markers).each(function(i, marker){
+					$("<li />")
+						.html(dataPoints.locations[i].title)
+						.click(function(){
+							displayPoint(marker, i);
+						})
+						.appendTo("#list");
+					
+					GEvent.addListener(marker, "click", function(){
+						displayPoint(marker, i);
+					});
+				});
+				
+				$("#message").appendTo(map.getPane(G_MAP_FLOAT_SHADOW_PANE));
+				
+				function displayPoint(marker, index){
+
+					$("#message").hide();
+					$("#message").text(dataPoints.locations[index].title);
+
+					var moveEnd = GEvent.addListener(map, "moveend", function(){
+						var markerOffset = map.fromLatLngToDivPixel(marker.getLatLng());
+						$("#message")
+							.fadeIn()
+							.css({ top: markerOffset.y, left: markerOffset.x });
+					
+						GEvent.removeListener(moveEnd);
+					});
+					map.panTo(marker.getLatLng());
+				}
+			});
+		</script>
+		<style type="text/css" media="screen">
+			#map { 
+				float:left; 
+				width:500px; 
+				height:500px; 
+			}
+			#message { 
+				position:absolute; 
+				padding:10px; 
+				background:#555; 
+				color:#fff;
+				display:inline-block;
+			}
+			#list { 
+				float:left; 
+				width:200px; 
+				background:#eee; 
+				list-style:none; 
+				padding:0; 
+			}
+			#list li { 
+				padding:10px; 
+			}
+			#list li:hover { 
+				background:#555; 
+				color:#fff; 
+				cursor:pointer; 
+				cursor:hand; 
+			}
+		</style>
+	</head>
+	<body>
+		<div id="map"></div>
+		<ul id="list"></ul>
+		<div id="message" style="display:none;">
+			Test text.
+		</div>
+	</body>
+</html>
