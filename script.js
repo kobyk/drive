@@ -21,12 +21,13 @@ var initPopcorn = function() {
 		'http://www.youtube.com/watch?v=i-vtDYgRgnU' );
 
 	// set all markers
-	var inc = 0;
 	for ( var i = 0; i < dataPoints.locations.length; i++) {
-		pop.cue( dataPoints.locations[i].cue, function() {
-			displayPoint(markers[inc], inc);
-			inc++;
-		});
+		var cueFunction = (function(id) {
+			return function () {
+				displayPoint(markers[id], id);
+			 };
+		})(i);
+		pop.cue( dataPoints.locations[i].cue, cueFunction);
 	}
 
 	// listen to timeupdate
