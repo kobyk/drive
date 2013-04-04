@@ -1,0 +1,47 @@
+body {
+	font-family: sans-serif;
+}
+#map {
+	position:absolute;
+	left:510px;
+	top:10px;
+	width:500px;
+	height:500px;
+}
+#message {
+	position:absolute;
+	padding:10px;
+	background:#555;
+	color:#fff;
+	display:inline-block;
+}
+#list {
+	display:none;
+	float:left;
+	width:200px;
+	background:#eee;
+	list-style:none;
+	padding:0;
+}
+#list li {
+	padding:10px;
+}
+#list li:hover {
+	background:#555;
+	color:#fff;
+	cursor:pointer;
+	cursor:hand;
+}
+#video {
+	width: 500px;
+	height: 300px;
+	position:absolute;
+	background:#000;
+	left:10px;
+	top:10px;
+}
+#footnotediv {
+	position:absolute;
+	top:350px;
+	left:10px;
+}
