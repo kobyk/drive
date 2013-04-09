@@ -11,6 +11,90 @@
 			"cue" : 3.5,
 			"lat" : 37.795224,
 			"lng" : -122.393913
+		},
+		{
+			"title" : "Golden Gate Bridge",
+			"cue" : 11.703,
+			"lat" : 37.831463,
+			"lng" : -122.480156
+		},
+		{
+			"title" : "Presidio Pkwy",
+			"cue" : 24.85,
+			"lat" : 37.809801,
+			"lng" : -122.477431
+		},
+		{
+			"title" : "Veterans Blvd",
+			"cue" : 25.903,
+			"lat" : 37.806546,
+			"lng" : -122.475328
+		},
+		{
+			"title" : "Geary Blvd",
+			"cue" : 37,
+			"lat" : 37.780687,
+			"lng" : -122.472496
+		},
+		{
+			"title" : "33th Avenue",
+			"cue" : 57,
+			"lat" : 37.779619,
+			"lng" : -122.493283
+		},
+		{
+			"title" : "Balboa St",
+			"cue" : 61,
+			"lat" : 37.775909,
+			"lng" : -122.493052
+		},
+		{
+			"title" : "43rd Ave",
+			"cue" : 74,
+			"lat" : 37.775413,
+			"lng" : -122.503695
+		},
+		{
+			"title" : "Fulton St",
+			"cue" : 76,
+			"lat" : 37.771715,
+			"lng" : -122.503481
+		},
+		{
+			"title" : "Chain of Lakes Dr E",
+			"cue" : 79,
+			"lat" : 37.768187,
+			"lng" : -122.500477
+		},
+		{
+			"title" : "41st Ave",
+			"cue" : 74,
+			"lat" : 37.764354,
+			"lng" : -122.500863
+		},
+		{
+			"title" : "43rd Ave",
+			"cue" : 74,
+			"lat" : 37.775413,
+			"lng" : -122.503695
+		},
+		{
+			"title" : "43rd Ave",
+			"cue" : 74,
+			"lat" : 37.775413,
+			"lng" : -122.503695
+		},
+		{
+			"title" : "43rd Ave",
+			"cue" : 74,
+			"lat" : 37.775413,
+			"lng" : -122.503695
+		},
+		{
+			"title" : "43rd Ave",
+			"cue" : 74,
+			"lat" : 37.775413,
+			"lng" : -122.503695
 		}
 	]
 }
