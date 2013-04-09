@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+body {
+	font-family: sans-serif;
+	font-size:12px;
+}
+#map {
+	position:absolute;
+	left:510px;
+	top:10px;
+	width:500px;
+	height:500px;
+}
+#message {
+	position:absolute;
+	padding:5px 10px;
+	background:#454545;
+	font-weight:bold;
+	color:#ff7;
+	display:inline-block;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+#list {
+	position:absolute;
+	left:1010px;
+	width:200px;
+	top:10px;
+	margin:0;
+	background:#eee;
+	list-style:none;
+	padding:0;
+}
+#list li {
+	padding:5px;
+}
+#list li:hover {
+	background:#555;
+	color:#fff;
+	cursor:pointer;
+	cursor:hand;
+}
+#video {
+	width: 500px;
+	height: 300px;
+	position:absolute;
+	background:#000;
+	left:10px;
+	top:10px;
+}
+#info {
+	position:absolute;
+	top:320px;
+	left:10px;
+}
+
+    </style>
+    <script type="text/javascript" src="http://popcornjs.org/code/dist/popcorn-complete.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByS8HX8_5UP_wrl4oBCnt6Z9GRgnsROZ0&sensor=true"></script>
+    <script type="text/javascript">
+
+var infowindow = new google.maps.InfoWindow({content: ""});
+
+var map;
+var markers = [];
+var dataPoints = {}
+var pop;
+
+$(document).ready(function(){
+	$.getJSON('data.json', function(data) {
+		dataPoints = data;
+	//	initPopcorn();
+		initGoogleMaps();
+	});
+});
+
+function initGoogleMaps() {
+
+	var sf = new google.maps.LatLng(37.760401, -122.434731);
+  var mapOptions = {
+    center: sf,
+    zoom: 12,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+	// generate data points from data
+	for (var i = 0; i < dataPoints.locations.length; i++) {
+		var loc = dataPoints.locations[i];
+		marker = new google.maps.Marker({
+			position : new google.maps.LatLng(loc.lat, loc.lng),
+			map : map
+		});
+		markers[i] = marker;
+	}  
+
+	var displayMarkerInfo = function(marker, content) {
+		infowindow.content = content;
+		infowindow.open(map, marker);
+		map.panTo(marker.getPosition());
+	}
+
+	$(markers).each(function(i, marker){
+		$("<li />")
+			.html(dataPoints.locations[i].title)
+			.click(function(){
+				displayMarkerInfo(marker, dataPoints.locations[i].title);
+				playVideoAtTime(dataPoints.locations[i].cue);
+			})
+			.appendTo("#list");
+  		google.maps.event.addListener(marker, 'click', function() {
+  			displayMarkerInfo(marker, dataPoints.locations[i].title);
+  			playVideoAtTime(dataPoints.locations[i].cue);
+  		});
+	});	
+
+
+
+	//$("#message").appendTo(map.getPane(G_MAP_FLOAT_SHADOW_PANE));
+
+  
+	// var style = [
+	// {
+	// 	"stylers": [
+	// 		{ "hue": "#0099ff" },
+	// 		{ "gamma": 0.69 }
+	// 	]
+	// 	}
+	// ];
+	// map.setOptions({styles: style});
+}
+
+var displayPoint = function(marker, index) {
+	// $("#message").hide();
+	// $("#message").text(dataPoints.locations[index].title);
+	// var moveEnd = GEvent.addListener(map, "moveend", function(){
+	// 	var markerOffset = map.fromLatLngToDivPixel(marker.getLatLng());
+	// 	$("#message")
+	// 		.fadeIn()
+	// 		.css({ top: markerOffset.y, left: markerOffset.x });
+	// 	GEvent.removeListener(moveEnd);
+	// });
+	// map.panTo(marker.getLatLng());
+}
+
+var playVideoAtTime = function(time) {
+	// pop.pause(time);
+	// // timeout because popcorn and flash won't play well all the time
+	// setTimeout(function() {
+	// 	pop.play();	
+	// }, 300);
+}
+
+// /google.maps.event.addDomListener(window, 'load', initialize);
+
+// var displayPoint = function(marker, index) {
+// 	$("#message").hide();
+// 	$("#message").text(dataPoints.locations[index].title);
+// 	var moveEnd = GEvent.addListener(map, "moveend", function(){
+// 		var markerOffset = map.fromLatLngToDivPixel(marker.getLatLng());
+// 		$("#message")
+// 			.fadeIn()
+// 			.css({ top: markerOffset.y, left: markerOffset.x });
+// 		GEvent.removeListener(moveEnd);
+// 	});
+// 	map.panTo(marker.getLatLng());
+// }
+
+
+
+
+    </script>
+  </head>
+	<body>
+		<div id="map"></div>
+		<ul id="list"></ul>
+		<div id="message" style="display:none;"></div>
+		<div id="video"></div>
+		<div id="info">current time: <input type="text" id="currentTime" /></div>
+	</body>
+</html>
+
+

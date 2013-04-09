@@ -1,7 +1,7 @@
 var map;
 var markers = [];
 var dataPoints = {}
-
+var pop;
 
 $(document).ready(function(){
 	$.getJSON('data.json', function(data) {
@@ -11,16 +11,12 @@ $(document).ready(function(){
 	});
 });
 
-
 var initPopcorn = function() {
-
-	var footnote = $('#footnotediv');
-
-	var pop = Popcorn.youtube(
+	
+	pop = Popcorn.youtube(
 		'#video',
 		'http://www.youtube.com/watch?v=i-vtDYgRgnU' );
 
-	// set all markers
 	for ( var i = 0; i < dataPoints.locations.length; i++) {
 		var cueFunction = (function(id) {
 			return function () {
@@ -30,9 +26,9 @@ var initPopcorn = function() {
 		pop.cue( dataPoints.locations[i].cue, cueFunction);
 	}
 
-	// listen to timeupdate
+	// set time update
 	pop.on( "timeupdate", function() {
-		footnote.text("timeupdate: " + this.currentTime());
+		$('#currentTime').val(this.currentTime());
 	});
 
 	pop.mute();
@@ -44,16 +40,10 @@ var initGoogleMaps = function() {
 
 	// GOOGLE MAPS
 	map = new GMap2($("#map").get(0));
-	var sanfran = new GLatLng(37.760401, -122.434731);
-	map.setCenter(sanfran, 12);
+	var sf = new GLatLng(37.760401, -122.434731);
+	map.setCenter(sf, 12);
 
-	// setup 10 random points
-	// var bounds = map.getBounds();
-	// var southWest = bounds.getSouthWest();
-	// var northEast = bounds.getNorthEast();
-	// var lngSpan = northEast.lng() - southWest.lng();
-	// var latSpan = northEast.lat() - southWest.lat();
-
+	// generate data points from data
 	for (var i = 0; i < dataPoints.locations.length; i++) {
 		var loc = dataPoints.locations[i];
 	    var point = new GLatLng(loc.lat, loc.lng);
@@ -66,14 +56,15 @@ var initGoogleMaps = function() {
 		$("<li />")
 			.html(dataPoints.locations[i].title)
 			.click(function(){
-				displayPoint(marker, i);
+				playVideoAtTime(dataPoints.locations[i].cue);
+				//displayPoint(marker, i);
 			})
 			.appendTo("#list");
-		GEvent.addListener(marker, "click", function(){
-			displayPoint(marker, i);
+		GEvent.addListener(marker, "click", function() {
+			playVideoAtTime(dataPoints.locations[i].cue);
+			//displayPoint(marker, i);
 		});
 	});
-
 	$("#message").appendTo(map.getPane(G_MAP_FLOAT_SHADOW_PANE));
 };
 
@@ -88,4 +79,12 @@ var displayPoint = function(marker, index) {
 		GEvent.removeListener(moveEnd);
 	});
 	map.panTo(marker.getLatLng());
+}
+
+var playVideoAtTime = function(time) {
+	pop.pause(time);
+	// timeout because popcorn and flash won't play well all the time
+	setTimeout(function() {
+		pop.play();	
+	}, 300);
 }
