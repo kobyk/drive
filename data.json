@@ -1,5 +1,5 @@
 {
-	"locations" : [
+	"markers" : [
 		{
 			"title" : "Castro",
 			"cue" : 1.5,
@@ -71,24 +71,6 @@
 			"cue" : 74,
 			"lat" : 37.764354,
 			"lng" : -122.500863
-		},
-		{
-			"title" : "43rd Ave",
-			"cue" : 74,
-			"lat" : 37.775413,
-			"lng" : -122.503695
-		},
-		{
-			"title" : "43rd Ave",
-			"cue" : 74,
-			"lat" : 37.775413,
-			"lng" : -122.503695
-		},
-		{
-			"title" : "43rd Ave",
-			"cue" : 74,
-			"lat" : 37.775413,
-			"lng" : -122.503695
 		},
 		{
 			"title" : "43rd Ave",

@@ -12,7 +12,7 @@ $(document).ready(function(){
 });
 
 var initPopcorn = function() {
-	
+
 	pop = Popcorn.youtube(
 		'#video',
 		'http://www.youtube.com/watch?v=i-vtDYgRgnU' );
@@ -85,6 +85,6 @@ var playVideoAtTime = function(time) {
 	pop.pause(time);
 	// timeout because popcorn and flash won't play well all the time
 	setTimeout(function() {
-		pop.play();	
+		pop.play();
 	}, 300);
 }
