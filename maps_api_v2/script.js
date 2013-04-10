@@ -4,7 +4,7 @@ var dataPoints = {}
 var pop;
 
 $(document).ready(function(){
-	$.getJSON('data.json', function(data) {
+	$.getJSON('../data.json', function(data) {
 		dataPoints = data;
 		initPopcorn();
 		initGoogleMaps();
@@ -17,13 +17,13 @@ var initPopcorn = function() {
 		'#video',
 		'http://www.youtube.com/watch?v=i-vtDYgRgnU' );
 
-	for ( var i = 0; i < dataPoints.locations.length; i++) {
+	for ( var i = 0; i < dataPoints.markers.length; i++) {
 		var cueFunction = (function(id) {
 			return function () {
 				displayPoint(markers[id], id);
 			 };
 		})(i);
-		pop.cue( dataPoints.locations[i].cue, cueFunction);
+		pop.cue( dataPoints.markers[i].cue, cueFunction);
 	}
 
 	// set time update
@@ -44,8 +44,8 @@ var initGoogleMaps = function() {
 	map.setCenter(sf, 12);
 
 	// generate data points from data
-	for (var i = 0; i < dataPoints.locations.length; i++) {
-		var loc = dataPoints.locations[i];
+	for (var i = 0; i < dataPoints.markers.length; i++) {
+		var loc = dataPoints.markers[i];
 	    var point = new GLatLng(loc.lat, loc.lng);
 		marker = new GMarker(point);
 		map.addOverlay(marker);
@@ -54,14 +54,14 @@ var initGoogleMaps = function() {
 
 	$(markers).each(function(i, marker){
 		$("<li />")
-			.html(dataPoints.locations[i].title)
+			.html(dataPoints.markers[i].title)
 			.click(function(){
-				playVideoAtTime(dataPoints.locations[i].cue);
+				playVideoAtTime(dataPoints.markers[i].cue);
 				//displayPoint(marker, i);
 			})
 			.appendTo("#list");
 		GEvent.addListener(marker, "click", function() {
-			playVideoAtTime(dataPoints.locations[i].cue);
+			playVideoAtTime(dataPoints.markers[i].cue);
 			//displayPoint(marker, i);
 		});
 	});
@@ -70,7 +70,7 @@ var initGoogleMaps = function() {
 
 var displayPoint = function(marker, index) {
 	$("#message").hide();
-	$("#message").text(dataPoints.locations[index].title);
+	$("#message").text(dataPoints.markers[index].title);
 	var moveEnd = GEvent.addListener(map, "moveend", function(){
 		var markerOffset = map.fromLatLngToDivPixel(marker.getLatLng());
 		$("#message")
