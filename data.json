@@ -1,16 +1,16 @@
 {
 	"markers" : [
 		{
-			"title" : "Castro",
-			"cue" : 1.5,
-			"lat" : 37.762613,
-			"lng" : -122.435192
+			"title" : "Kirby Cove",
+			"cue" : 1,
+			"lat" : 37.827446, 
+			"lng" : -122.490156
 		},
 		{
-			"title" : "Embarcadero",
-			"cue" : 3.5,
-			"lat" : 37.795224,
-			"lng" : -122.393913
+			"title" : "Redwood Hwy",
+			"cue" : 10,
+			"lat" : 37.833751, 
+			"lng" : -122.483633
 		},
 		{
 			"title" : "Golden Gate Bridge",
@@ -31,13 +31,25 @@
 			"lng" : -122.475328
 		},
 		{
+			"title" : "General Douglas MacArthur Tunnel",
+			"cue" : 28,
+			"lat" : 37.796155, 
+			"lng" : -122.469519
+		},
+		{
+			"title" : "Veterans Blvd",
+			"cue" : 30,
+			"lat" : 37.792511,
+			"lng" : -122.469650
+		},
+		{
 			"title" : "Geary Blvd",
 			"cue" : 37,
 			"lat" : 37.780687,
 			"lng" : -122.472496
 		},
 		{
-			"title" : "33th Avenue",
+			"title" : "33rd Avenue",
 			"cue" : 57,
 			"lat" : 37.779619,
 			"lng" : -122.493283
@@ -68,15 +80,123 @@
 		},
 		{
 			"title" : "41st Ave",
-			"cue" : 74,
-			"lat" : 37.764354,
+			"cue" : 84,
+			"lat" : 37.764303, 
 			"lng" : -122.500863
 		},
 		{
-			"title" : "43rd Ave",
-			"cue" : 74,
-			"lat" : 37.775413,
-			"lng" : -122.503695
+			"title" : "Lawton St",
+			"cue" : 92,
+			"lat" : 37.756941, 
+			"lng" : -122.500262
+		},
+		{
+			"title" : "16th Ave",
+			"cue" : 119.144,
+			"lat" : 37.758035, 
+			"lng" : -122.473724
+		},
+		{
+			"title" : "Lawton St",
+			"cue" : 121.073,
+			"lat" : 37.759142, 
+			"lng" : -122.472507
+		},
+		{
+			"title" : "Warren Dr",
+			"cue" : 131,
+			"lat" : 37.758336, 
+			"lng" : -122.462518
+		},
+		{
+			"title" : "Oak Park Dr",
+			"cue" : 139,
+			"lat" : 37.755465, 
+			"lng" : -122.456253
+		},
+		{
+			"title" : "Clarendon Ave",
+			"cue" : 140,
+			"lat" : 37.755142, 
+			"lng" : -122.455105
+		},
+		{
+			"title" : "Twin Peaks Blvd",
+			"cue" : 152,
+			"lat" : 37.745964, 
+			"lng" : -122.450792
+		},
+		{
+			"title" : "Portola Dr",
+			"cue" : 169,
+			"lat" : 37.745938, 
+			"lng" : -122.450459
+		},
+		{
+			"title" : "Market St",
+			"cue" : 174,
+			"lat" : 37.751240, 
+			"lng" : -122.443067
+		},
+		{
+			"title" : "Castro",
+			"cue" : 190,
+			"lat" : 37.762691, 
+			"lng" : -122.435149
+		},
+		{
+			"title" : "15th St",
+			"cue" : 195,
+			"lat" : 37.765991, 
+			"lng" : -122.430750
+		},
+		{
+			"title" : "Dubose Ave",
+			"cue" : 207,
+			"lat" : 37.769640, 
+			"lng" : -122.426169
+		},
+		{
+			"title" : "Octavia Blvd",
+			"cue" : 216,
+			"lat" : 37.771826, 
+			"lng" : -122.423449
+		},
+		{
+			"title" : "Gough St",
+			"cue" : 220,
+			"lat" : 37.773002, 
+			"lng" : -122.421955
+		},
+		{
+			"title" : "1st St",
+			"cue" : 271,
+			"lat" : 37.791040,  
+			"lng" : -122.399183
+		},
+		{
+			"title" : "Harrison St",
+			"cue" : 281,
+			"lat" : 37.786078, 
+			"lng" : -122.392987
+		},
+		{
+			"title" : "Dwight D. Eisenhower Hwy",
+			"cue" : 283,
+			"lat" : 37.785413, 
+			"lng" : -122.391971
+		},
+		{
+			"title" : "Oakland Bay Bridge",
+			"cue" : 286,
+			"lat" : 37.787804, 
+			"lng" : -122.389066
+		},
+		{
+			"title" : "Treasure Island",
+			"cue" : 279,
+			"lat" : 37.807962, 
+			"lng" : -122.367300
 		}
 	]
 }

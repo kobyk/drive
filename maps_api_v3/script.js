@@ -39,7 +39,7 @@ var initGoogleMaps = function() {
 	// create map centered on SF
   var mapOptions = {
     center: new google.maps.LatLng(37.760401, -122.434731), // san francisco
-    zoom: 12,
+    zoom: 15,
     disableDefaultUI: true,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
