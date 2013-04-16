@@ -4,13 +4,15 @@
 			"title" : "Kirby Cove",
 			"cue" : 1,
 			"lat" : 37.827446, 
-			"lng" : -122.490156
+			"lng" : -122.490156,
+			"pic" : "kirby-cove-san-francisco-bay-california-douglas-pulsipher.jpg"
 		},
 		{
 			"title" : "Redwood Hwy",
 			"cue" : 10,
 			"lat" : 37.833751, 
-			"lng" : -122.483633
+			"lng" : -122.483633,
+			"pic" : "golden-gate-bridge-picture.jpg"
 		},
 		{
 			"title" : "Golden Gate Bridge",

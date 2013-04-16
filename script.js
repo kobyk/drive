@@ -2,10 +2,11 @@ var map
 	, pop
 	, infoWindow
 	, markers = []
+	, pic_locations = "pics/"
 	, video_url = 'http://www.youtube.com/watch?v=i-vtDYgRgnU';
 
 $(document).ready(function(){
-	$.getJSON('../data.json', function(data) {
+	$.getJSON('data.json', function(data) {
 		markers = data.markers;
 		initPopcorn();
 		initGoogleMaps();
@@ -39,7 +40,7 @@ var initGoogleMaps = function() {
 	// create map centered on SF
   var mapOptions = {
     center: new google.maps.LatLng(37.760401, -122.434731), // san francisco
-    zoom: 20,
+    zoom: 14,
     disableDefaultUI: true,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
@@ -64,6 +65,29 @@ var selectMarker = function(marker, forcePlay) {
 	infoWindow.content = marker.title;
 	infoWindow.open(map, marker.mapMarker);
 	map.panTo(marker.mapMarker.getPosition());
+
+	// append image to image_pane
+	$('#image').empty();
+	var img = $("<img />").attr('src', pic_locations + marker.pic)
+    	.load(function() {
+    		var i = img[0];
+    		var rect_ratio = $('#image').height() / $('#image').width();
+    		var img_ratio = i.height / i.width;
+    		// landscape
+    		if (img_ratio < rect_ratio) { 
+    			img.css({
+    				'width' : '100%',
+    				'margin-top' : ($('#image').height() / 2) - (i.height / 2) + "px"
+    			});
+    			// portrait
+    		} else { 
+    			img.css({'height' : '100%' });
+    		}
+    		img.hide();
+    		$('#image').append(img);
+    		img.fadeIn(250);
+    	});
+
 	if (forcePlay)
 		playVideoAtTime(marker.cue);
 }
