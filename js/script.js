@@ -15,7 +15,7 @@ $(document).ready(function(){
 
 var initPopcorn = function() {
 
-	pop = Popcorn.youtube('#video', video_url );
+	pop = Popcorn.youtube('#video');
 
 	for ( var i = 0; i < markers.length; i++) {
 		var cueFunction = (function(key) {

@@ -541,10 +541,17 @@
 		},
 		{
 			"title" : "Treasure Island",
-			"cue" : 279,
+			"cue" : 296,
 			"lat" : 37.807962, 
 			"lng" : -122.367300,
 			"pic" : "tisland.jpg"
+		},
+		{
+			"title" : "Lincoln Hwy",
+			"cue" : 309,
+			"lat" : 37.821413, 
+			"lng" : -122.328601,
+			"pic" : "lincoln.jpg"
 		}
 	]
 }
