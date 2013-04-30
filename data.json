@@ -18,403 +18,533 @@
 			"title" : "Golden Gate Bridge",
 			"cue" : 11.703,
 			"lat" : 37.831463,
-			"lng" : -122.480156
+			"lng" : -122.480156,
+			"pic" : "golden-gate-bridge-picture.jpg"
 		},
 		{
 			"title" : "Golden Gate Bridge",
 			"cue" : 16.703,
 			"lat" : 37.818751, 
-			"lng" : -122.478504
+			"lng" : -122.478504,
+			"pic" : "golden-gate-bridge-picture.jpg"
 		},
 		{
 			"title" : "Presidio Pkwy",
 			"cue" : 24.85,
 			"lat" : 37.809801,
-			"lng" : -122.477431
+			"lng" : -122.477431,
+			"pic" : "presido pkwy.jpg"
 		},
 		{
 			"title" : "Veterans Blvd",
 			"cue" : 25.903,
 			"lat" : 37.806546,
-			"lng" : -122.475328
+			"lng" : -122.475328,
+			"pic" : "veterans blvd.jpg"
 		},
 		{
 			"title" : "General Douglas MacArthur Tunnel",
 			"cue" : 28,
 			"lat" : 37.796155, 
-			"lng" : -122.469519
+			"lng" : -122.469519,
+			"pic" : "general douglas tunnel.jpg"
 		},
 		{
 			"title" : "Veterans Blvd",
 			"cue" : 30,
 			"lat" : 37.792511,
-			"lng" : -122.469650
+			"lng" : -122.469650,
+			"pic" : "veterans.jpg"
 		},
 		{
 			"title" : "Geary Blvd",
 			"cue" : 37,
 			"lat" : 37.780687,
-			"lng" : -122.472496
+			"lng" : -122.472496,
+			"pic" : "geary.jpg"
 		},
 		{
 			"title" : "16th Ave",
 			"cue" : 38,
 			"lat" : 37.780535, 
-			"lng" : -122.475082
+			"lng" : -122.475082,
+			"pic" : "16th.jpg"
 		},
 		{
 			"title" : "18th Ave",
 			"cue" : 39,
 			"lat" : 37.780399, 
-			"lng" : -122.477270
+			"lng" : -122.477270,
+			"pic" : "18th ave.jpg"
 		},
 		{
 			"title" : "20th Ave",
 			"cue" : 41,
 			"lat" : 37.780331, 
-			"lng" : -122.479416
+			"lng" : -122.479416,
+			"pic" : "20th.jpg"
 		},
 		{
 			"title" : "22nd Ave",
 			"cue" : 42,
 			"lat" : 37.780204, 
-			"lng" : -122.481519
+			"lng" : -122.481519,
+			"pic" : "22nd.jpg"
 		},
 		{
 			"title" : "24th Ave",
 			"cue" : 46,
 			"lat" : 37.780102, 
-			"lng" : -122.483643
+			"lng" : -122.483643,
+			"pic" : "24th.jpg"
 		},
 		{
 			"title" : "26th Ave",
 			"cue" : 50,
 			"lat" : 37.780009, 
-			"lng" : -122.485832
+			"lng" : -122.485832,
+			"pic" : "26th.jpg"
 		},
 		{
 			"title" : "28th Ave",
 			"cue" : 51,
 			"lat" : 37.779873, 
-			"lng" : -122.487903
+			"lng" : -122.487903,
+			"pic" : "28th.jpg"
 		},
 		{
 			"title" : "30th Ave",
 			"cue" : 53,
 			"lat" : 37.779840, 
-			"lng" : -122.490081
+			"lng" : -122.490081,
+			"pic" : "30th.jpg"
 		},
 		{
 			"title" : "32nd Ave",
 			"cue" : 56,
 			"lat" : 37.779712, 
-			"lng" : -122.492248
+			"lng" : -122.492248,
+			"pic" : "32nd.jpg"
 		},
 		{
 			"title" : "33rd Avenue",
 			"cue" : 57,
 			"lat" : 37.779619,
-			"lng" : -122.493283
+			"lng" : -122.493283,
+			"pic" : "33rd.jpg"
 		},
 		{
 			"title" : "Anza St",
 			"cue" : 59,
 			"lat" : 37.777787, 
-			"lng" : -122.493149
+			"lng" : -122.493149,
+			"pic" : "anza.jpg"
 		},
 		{
 			"title" : "Balboa St",
 			"cue" : 61,
 			"lat" : 37.775909,
-			"lng" : -122.493052
+			"lng" : -122.493052,
+			"pic" : "balboa.jpg"
 		},
 		{
 			"title" : "35th Ave",
 			"cue" : 64,
 			"lat" : 37.775845, 
-			"lng" : -122.495188
+			"lng" : -122.495188,
+			"pic" : "35th.jpg"
 		},
 		{
 			"title" : "37th Ave",
 			"cue" : 67,
 			"lat" : 37.775701, 
-			"lng" : -122.497312
+			"lng" : -122.497312,
+			"pic" : "37th.jpg"
 		},
 		{
 			"title" : "39th Ave",
 			"cue" : 69,
 			"lat" : 37.775633, 
-			"lng" : -122.499447
+			"lng" : -122.499447,
+			"pic" : "39th.jpg"
 		},
 		{
 			"title" : "41st Ave",
 			"cue" : 72,
 			"lat" : 37.775515, 
-			"lng" : -122.501603
+			"lng" : -122.501603,
+			"pic" : "41st.jpg"
 		},
 		{
 			"title" : "43rd Ave",
 			"cue" : 74,
 			"lat" : 37.775413,
-			"lng" : -122.503695
+			"lng" : -122.503695,
+			"pic" : "43rd.jpg"
 		},
 		{
 			"title" : "Fulton St",
 			"cue" : 76,
 			"lat" : 37.771715,
-			"lng" : -122.503481
+			"lng" : -122.503481,
+			"pic" : "fulton1.jpg"
 		},
 		{
 			"title" : "Chain of Lakes Dr E",
 			"cue" : 79,
 			"lat" : 37.768187,
-			"lng" : -122.500477
+			"lng" : -122.500477,
+			"pic" : "chain of lakes.jpg"
 		},
 		{
 			"title" : "41st Ave",
 			"cue" : 84,
 			"lat" : 37.764303, 
-			"lng" : -122.500863
+			"lng" : -122.500863,
+			"pic" : "411st.jpg"
 		},
 		{
 			"title" : "Irving St",
 			"cue" : 86,
 			"lat" : 37.762522, 
-			"lng" : -122.500670
+			"lng" : -122.500670,
+			"pic" : "irving.jpg"
 		},
 		{
 			"title" : "Judah St",
 			"cue" : 88,
 			"lat" : 37.760673, 
-			"lng" : -122.500573
+			"lng" : -122.500573,
+			"pic" : "judah.jpg"
 		},
 		{
 			"title" : "Kirkham St",
 			"cue" : 90,
 			"lat" : 37.758807, 
-			"lng" : -122.500445
+			"lng" : -122.500445,
+			"pic" : "kirkham.jpg"
 		},
 		{
 			"title" : "Lawton St",
 			"cue" : 92,
 			"lat" : 37.756941, 
-			"lng" : -122.500262
+			"lng" : -122.500262,
+			"pic" : "lawton.jpg"
 		},
 		{
 			"title" : "39th Ave",
 			"cue" : 94,
 			"lat" : 37.757025, 
-			"lng" : -122.498213
+			"lng" : -122.498213,
+			"pic" : "391th.jpg"
 		},
 		{
 			"title" : "37th Ave",
 			"cue" : 96,
 			"lat" : 37.757127, 
-			"lng" : -122.496035
+			"lng" : -122.496035,
+			"pic" : "371st.jpg"
 		},
 		{
 			"title" : "35th Ave",
 			"cue" : 99,
 			"lat" : 37.757187, 
-			"lng" : -122.493889
+			"lng" : -122.493889,
+			"pic" : "351th.jpg"
 		},
 		{
 			"title" : "33rd Ave",
 			"cue" : 102.073,
 			"lat" : 37.757280, 
-			"lng" : -122.491754
+			"lng" : -122.491754,
+			"pic" : "331rd.jpg"
 		},
 		{
 			"title" : "31st Ave",
 			"cue" : 104.073,
 			"lat" : 37.757390, 
-			"lng" : -122.489587
+			"lng" : -122.489587,
+			"pic" : "311st.jpg"
 		},
 		{
 			"title" : "29th Ave",
 			"cue" : 106.073,
 			"lat" : 37.757500, 
-			"lng" : -122.487484
+			"lng" : -122.487484,
+			"pic" : "291st.jpg"
 		},
 		{
 			"title" : "27th Ave",
 			"cue" : 108.073,
 			"lat" : 37.757568, 
-			"lng" : -122.485306
+			"lng" : -122.485306,
+			"pic" : "271th.jpg"
 		},
 		{
 			"title" : "25th Ave",
 			"cue" : 110.073,
 			"lat" : 37.757679, 
-			"lng" : -122.483118
+			"lng" : -122.483118,
+			"pic" : "251th.jpg"
 		},
 		{
 			"title" : "23rd Ave",
 			"cue" : 112.073,
 			"lat" : 37.757814, 
-			"lng" : -122.481058
+			"lng" : -122.481058,
+			"pic" : "231rd.jpg"
 		},
 		{
 			"title" : "21st Ave",
 			"cue" : 114.073,
 			"lat" : 37.757865, 
-			"lng" : -122.478901
+			"lng" : -122.478901,
+			"pic" : "211st.jpg"
 		},
 		{
 			"title" : "19th Ave",
 			"cue" : 117.073,
 			"lat" : 37.758009, 
-			"lng" : -122.476712
+			"lng" : -122.476712,
+			"pic" : "191th.jpg"
 		},
 		{
 			"title" : "16th Ave",
 			"cue" : 119.144,
 			"lat" : 37.758035, 
-			"lng" : -122.473724
+			"lng" : -122.473724,
+			"pic" : "161th.jpg"
 		},
 		{
 			"title" : "Lawton St",
 			"cue" : 121.073,
 			"lat" : 37.759142, 
-			"lng" : -122.472507
+			"lng" : -122.472507,
+			"pic" : "Lawton1.jpg"
 		},
 		{
 			"title" : "Funston Ave",
 			"cue" : 123.073,
 			"lat" : 37.758289, 
-			"lng" : -122.470243
+			"lng" : -122.470243,
+			"pic" : "funston.jpg"
 		},
 		{
 			"title" : "11th Ave",
 			"cue" : 125.073,
 			"lat" : 37.758332, 
-			"lng" : -122.468054
+			"lng" : -122.468054,
+			"pic" : "111th.jpg"
 		},
 		{
 			"title" : "9th Ave",
 			"cue" : 126.073,
 			"lat" : 37.758467, 
-			"lng" : -122.466005
+			"lng" : -122.466005,
+			"pic" : "91th.jpg"
 		},
 		{
 			"title" : "8th Ave",
 			"cue" : 129.073,
 			"lat" : 37.758493, 
-			"lng" : -122.464803
+			"lng" : -122.464803,
+			"pic" : "81th.jpg"
 		},
 		{
 			"title" : "Warren Dr",
 			"cue" : 131,
 			"lat" : 37.758336, 
-			"lng" : -122.462518
+			"lng" : -122.462518,
+			"pic" : "warren.jpg"
 		},
 		{
-			"title" : "Oak Park Dr",
+			"title" : "Devonshire Way",
 			"cue" : 134,
 			"lat" : 37.758336, 
-			"lng" : -122.462518
+			"lng" : -122.462518,
+			"pic" : "devonshire.jpg"
 		},
 		{
 			"title" : "Christopher Dr",
 			"cue" : 139,
 			"lat" : 37.754107, 
-			"lng" : -122.460802
+			"lng" : -122.460802,
+			"pic" : "chistopher.jpg"
 		},
 		{
 			"title" : "Clarendon Ave",
 			"cue" : 140,
 			"lat" : 37.755142, 
-			"lng" : -122.455105
+			"lng" : -122.455105,
+			"pic" : "clarendon.jpg"
 		},
 		{
 			"title" : "Dellbrook Ave",
 			"cue" : 143,
 			"lat" : 37.757441, 
-			"lng" : -122.453723
+			"lng" : -122.453723,
+			"pic" : "dellbrook.jpg"
 		},
 		{
 			"title" : "Twin Peaks Blvd",
 			"cue" : 152,
 			"lat" : 37.745964, 
-			"lng" : -122.450792
+			"lng" : -122.450792,
+			"pic" : "twin peaks.jpg"
 		},
 		{
 			"title" : "Portola Dr",
 			"cue" : 169,
 			"lat" : 37.745938, 
-			"lng" : -122.450459
+			"lng" : -122.450459,
+			"pic" : "portola.jpg"
 		},
 		{
 			"title" : "Market St",
 			"cue" : 174,
 			"lat" : 37.751240, 
-			"lng" : -122.443067
+			"lng" : -122.443067,
+			"pic" : "market.jpg"
 		},
 		{
 			"title" : "Castro",
 			"cue" : 190,
 			"lat" : 37.762691, 
-			"lng" : -122.435149
+			"lng" : -122.435149,
+			"pic" : "castro.jpg"
 		},
 		{
 			"title" : "15th St",
 			"cue" : 195,
 			"lat" : 37.765991, 
-			"lng" : -122.430750
+			"lng" : -122.430750,
+			"pic" : "15th.jpg"
 		},
 		{
 			"title" : "Dubose Ave",
 			"cue" : 207,
 			"lat" : 37.769640, 
-			"lng" : -122.426169
+			"lng" : -122.426169,
+			"pic" : "dubose.jpg"
 		},
 		{
 			"title" : "Octavia Blvd",
 			"cue" : 216,
 			"lat" : 37.771826, 
-			"lng" : -122.423449
+			"lng" : -122.423449,
+			"pic" : "octavia.jpg"
 		},
 		{
 			"title" : "Gough St",
 			"cue" : 220,
 			"lat" : 37.773002, 
-			"lng" : -122.421955
+			"lng" : -122.421955,
+			"pic" : "gough.jpg"
 		},
 		{
 			"title" : "South Van Ness Ave",
 			"cue" : 226,
 			"lat" : 37.775031, 
-			"lng" : -122.419302
+			"lng" : -122.419302,
+			"pic" : "s.vanness.jpg"
+		},
+		{
+			"title" : "10th St",
+			"cue" : 231,
+			"lat" : 37.776541, 
+			"lng" : -122.417543,
+			"pic" : "10th.jpg"
+		},
+		{
+			"title" : "9th St",
+			"cue" : 236,
+			"lat" : 37.777499, 
+			"lng" : -122.416309,
+			"pic" : "9th.jpg"
+		},
+		{
+			"title" : "8th St",
+			"cue" : 241,
+			"lat" : 37.778737, 
+			"lng" : -122.414839,
+			"pic" : "8th.jpg"
+		},
+		{
+			"title" : "7th St",
+			"cue" : 246,
+			"lat" : 37.780492, 
+			"lng" : -122.412565,
+			"pic" : "7th.jpg"
+		},
+		{
+			"title" : "6th St",
+			"cue" : 251,
+			"lat" : 37.782231, 
+			"lng" : -122.410355,
+			"pic" : "6th.jpg"
+		},
+		{
+			"title" : "5th St",
+			"cue" : 256,
+			"lat" : 37.784206, 
+			"lng" : -122.407876,
+			"pic" : "5th.jpg"
+		},
+		{
+			"title" : "4th St",
+			"cue" : 261,
+			"lat" : 37.785733, 
+			"lng" : -122.405870,
+			"pic" : "4th.jpg"
+		},
+		{
+			"title" : "3rd St",
+			"cue" : 266,
+			"lat" : 37.787640, 
+			"lng" : -122.403499,
+			"pic" : "3rd.jpg"
+		},
+		{
+			"title" : "2nd St",
+			"cue" : 270,
+			"lat" : 37.789218, 
+			"lng" : -122.401536,
+			"pic" : "2nd.jpg"
 		},
 		{
 			"title" : "1st St",
 			"cue" : 271,
 			"lat" : 37.791040,  
-			"lng" : -122.399183
+			"lng" : -122.399183,
+			"pic" : "1st.jpg"
 		},
 		{
 			"title" : "Harrison St",
 			"cue" : 281,
 			"lat" : 37.786078, 
-			"lng" : -122.392987
+			"lng" : -122.392987,
+			"pic" : "harrison.jpg"
 		},
 		{
 			"title" : "Dwight D. Eisenhower Hwy",
 			"cue" : 283,
 			"lat" : 37.785413, 
-			"lng" : -122.391971
+			"lng" : -122.391971,
+			"pic" : "dwightd.jpg"
 		},
 		{
 			"title" : "Oakland Bay Bridge",
 			"cue" : 286,
 			"lat" : 37.787804, 
-			"lng" : -122.389066
+			"lng" : -122.389066,
+			"pic" : "oakbridge.jpg"
 		},
 		{
 			"title" : "Treasure Island",
 			"cue" : 279,
 			"lat" : 37.807962, 
-			"lng" : -122.367300
+			"lng" : -122.367300,
+			"pic" : "tisland.jpg"
 		}
 	]
 }
