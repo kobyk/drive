@@ -15,7 +15,8 @@ $(document).ready(function(){
 
 var initPopcorn = function() {
 
-	pop = Popcorn('#video');
+	pop = Popcorn.youtube( '#video', video_url );
+	pop.preload( "auto" );
 
 	for ( var i = 0; i < markers.length; i++) {
 		var cueFunction = (function(key) {
@@ -96,6 +97,6 @@ var playVideoAtTime = function(time) {
 	pop.pause(time);
 	// timeout because popcorn and flash won't coorporate all the time
 	setTimeout(function() {
-		pop.play();
+		pop.play(time);
 	}, 300);
 }

@@ -19,14 +19,21 @@
 			"cue" : 11.703,
 			"lat" : 37.831463,
 			"lng" : -122.480156,
-			"pic" : "golden-gate-bridge-picture.jpg"
+			"pic" : "goldengate2.jpg"
 		},
 		{
 			"title" : "Golden Gate Bridge",
 			"cue" : 16.703,
 			"lat" : 37.818751, 
 			"lng" : -122.478504,
-			"pic" : "golden-gate-bridge-picture.jpg"
+			"pic" : "golden gate3.jpg"
+		},
+		{
+			"title" : "Toll Plaza",
+			"cue" : 18,
+			"lat" : 37.811013, 
+			"lng" : -122.477604,
+			"pic" : "toll.jpg"
 		},
 		{
 			"title" : "Presidio Pkwy",
@@ -387,10 +394,17 @@
 		},
 		{
 			"title" : "Twin Peaks Blvd",
+			"cue" : 147,
+			"lat" : 37.758993, 
+			"lng" : -122.448510,
+			"pic" : "twin peaks.jpg"
+		},
+		{
+			"title" : "Twin Peaks Blvd",
 			"cue" : 152,
 			"lat" : 37.745964, 
 			"lng" : -122.450792,
-			"pic" : "twin peaks.jpg"
+			"pic" : "twinpeaks2.jpg"
 		},
 		{
 			"title" : "Portola Dr",
